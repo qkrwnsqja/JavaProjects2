@@ -2,6 +2,7 @@ package w0903;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class RockGame {
@@ -48,13 +49,16 @@ public class RockGame {
 
             }
         }
-                aWin = Collections.frequency(Arrays.asList(result), "A");
-                bWin = Collections.frequency(Arrays.asList(result), "B");
-                noWin = Collections.frequency(Arrays.asList(result), "없음");
 
-                System.out.printf("%d번 중 Computer A의 승리 횟수: %d번\n", result.length, aWin);
-                System.out.printf("%d번 중 Computer B의 승리 횟수: %d번\n", result.length, bWin);
-                System.out.printf("%d번 중 Computer 비긴 경기 횟수: %d번\n", result.length, noWin);
+        List<String> list = Arrays.asList(result);
+
+        aWin = Collections.frequency(Arrays.asList(result), "A");
+        bWin = Collections.frequency(Arrays.asList(result), "B");
+        noWin = Collections.frequency(Arrays.asList(result), "없음");
+
+        System.out.printf("%d번 중 Computer A의 승리 횟수: %d번\n", result.length, aWin);
+        System.out.printf("%d번 중 Computer B의 승리 횟수: %d번\n", result.length, bWin);
+        System.out.printf("%d번 중 Computer 비긴 경기 횟수: %d번\n", result.length, noWin);
 
     }
 }
