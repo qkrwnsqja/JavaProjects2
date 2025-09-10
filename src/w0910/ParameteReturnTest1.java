@@ -1,8 +1,8 @@
-package W0910;
+package w0910;
 
 import java.util.Scanner;
 
-public class ParameteReturnTest {
+public class ParameteReturnTest1 {
 
     public static void main(String[] args) {
         System.out.println("=== 2개의 정수의 합계를 구해드립니다.===");
